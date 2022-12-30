@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap');
+
 *{
     margin: 0;
 
     padding: 0;
 
     box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -20,9 +24,11 @@ body{
     width: 350px;
 }
 
-.popup :where(.picker, header)
+.popup :where(.picker, header,.all-colors, .color)
 {
     display: flex;
+
+    align-items: center;
 }
 
 .popup .picker{
@@ -56,4 +62,53 @@ body{
 
 .picked-colors{
     margin: 10px 15px;
+}
+
+.picked-colors header{
+    justify-content: space-between;
+}
+
+.picked-colors .clear-all{
+    color: #5372f0;
+
+    cursor: pointer;
+
+    font-size: 0.9rem;
+}
+
+.all-colors{
+    margin: 10px 0;
+
+    flex-wrap: wrap;
+}
+.all-colors .color{
+
+    cursor: pointer;
+
+    margin-bottom: 10px;
+
+    width: calc(100% / 3);
+}
+
+.all-colors .color .rect{
+    display: block;
+
+    height: 22px;
+
+    width: 22px;
+
+    margin-right: 8px;
+
+    background: #5372f0;
+
+    border-radius: 5px;
+}
+
+.all-colors .color .value{
+
+    font-size: 0.96rem;
+
+    font-weight: 500;
+
+    text-transform: uppercase;
 }
