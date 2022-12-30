@@ -11,7 +11,9 @@ const showColors = () => {
 
        <li class="color">
        
-          <span class="rect" style="background: ${color}"></span>
+          <span class="rect" style="background: ${color};
+          
+          border: 1px solid ${color == "#FFFFFF" ? "#ccc" : color}"></span>
                 
           <span class="value">${color}</span>
             
@@ -20,6 +22,8 @@ const showColors = () => {
 
 
 }
+
+showColors();
 
 const  activateEyeDropper = async () => {
     try{
