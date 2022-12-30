@@ -33,11 +33,14 @@ const  activateEyeDropper = async () => {
 
         await navigator.clipboard.writeText(sRGBHex);
 
-        pickedColors.push(sRGBHex);
+        if(!pickedColors.includes(sRGBHex))
+        {
+            pickedColors.push(sRGBHex);
 
-        localStorage.setItem("color-data", JSON.stringify(pickedColors));
+            localStorage.setItem("color-data", JSON.stringify(pickedColors));
 
-        showColors();
+            showColors();
+        }
 
     }catch(error)
     {
