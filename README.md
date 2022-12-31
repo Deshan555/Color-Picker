@@ -9,3 +9,5 @@ Color-zilla is a Google plugin that can detect color codes in online pages and s
 - Open Google Chrome in developer mode and pick the load unpacked option.
 - After that, you can pick the folder you previously unpacked or cloned.
 - If you followed all of the procedures successfully, the extension will automatically launch in Chrome.
+
+[!screen-shot](https://github.com/Deshan555/Color-Picker/blob/master/app.png)
